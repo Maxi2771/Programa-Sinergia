@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario Encuesta</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulario Encuesta</h1>
+        <p id="description">Una encuesta para Programa Sinergia 2025</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required="required">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu email" required="required">
+        </div>
+        <div class="form-group">
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age" placeholder="Ingresa tu edad" min="10" max="99" required="required">
+        </div>
+        <div class="form-group">
+            <p>¿A qué area del Desarrollo Web te dedicas?</p>
+            <select name="dropdown" id="dropdown">
+                <option disabled="" selected="" value="">Seleccione una opción</option>
+                <option value="frontend">Fronted</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>¿Qué tan bueno eres en tu área?</p>
+            <label><input type="radio" name="opcion" id="avanzado" value="avanzado">Avanzado</label>
+            <label><input type="radio" name="opcion" id="medio" value="medio">Medio</label>
+            <label><input type="radio" name="opcion" id="bajo" value="bajo">Bajo</label>
+        </div>
+        <div class="form-group">
+            <p>¿Qué tecnologias empleas?</p>
+            <label><input type="checkbox" name="tecno" id="html">HTML</label>
+            <label><input type="checkbox" name="tecno" id="css">CSS</label>
+            <label><input type="checkbox" name="tecno" id="js">JavaScript</label>
+            <label><input type="checkbox" name="tecno" id="php">PHP</label>
+            <label><input type="checkbox" name="tecno" id="java">Java</label>
+            <label><input type="checkbox" name="tecno" id="python">Python</label>
+            <label><input type="checkbox" name="tecno" id="csharp">C#</label>
+            <label><input type="checkbox" name="tecno" id="c">C</label>
+            <label><input type="checkbox" name="tecno" id="cplus">C++</label>
+            <label><input type="checkbox" name="tecno" id="sql">SQL</label>
+            <label><input type="checkbox" name="tecno" id="mariadb">MariaDB</label>
+        </div>
+        <div class="form-group">
+            <p>¿Qué más nos puedes contar de ti?</p>
+            <textarea name="texto" id="texto" placeholder="Cuentanos un poco más de ti"></textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

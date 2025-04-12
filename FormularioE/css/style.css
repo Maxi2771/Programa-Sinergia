@@ -1,0 +1,169 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+header{
+    text-align: center;
+    font-size: 1.5em;
+    color: #57CC99;
+}
+
+h1{
+    text-shadow: 4px 1px 0px #0e6e4c;
+}
+
+header p{
+    text-shadow: 2px 1px 0px #0e6e4c;
+}
+
+form{
+    width: 50%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 40px;
+    margin-left: 25%;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px #57CC99;
+    backdrop-filter: blur(10px);
+    color: black;
+}
+
+.form-group{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+label::first-letter{
+    color: #57CC99;
+}
+
+input[type="text"], input[type="email"]{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="number"]{
+    width: 20%;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="checkbox"]{
+    accent-color: #57CC99;
+}
+
+input[type="radio"]{
+    accent-color: #57CC99;
+}
+
+select{
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#texto{
+    width: 80%;
+    height: 100px;
+    resize: none;
+}
+
+button{
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #80ED99;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        font-size: 1.2em; 
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+    
+    header p{
+        font-size: 0.8em;
+    }
+
+    form {
+        width: 90%; 
+        margin-left: 5%;
+        height: auto;
+        border-radius: 20px; 
+        padding: 20px; 
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+
+    input[type="text"], input[type="email"], select {
+        width: 100%; 
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+        width: 50%;
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    #texto {
+        width: 100%; 
+        height: 150px;
+    }
+
+    button {
+        width: 80%; 
+        margin-left: 10%; 
+        height: 50px;
+        font-size: 18px; 
+    }
+}

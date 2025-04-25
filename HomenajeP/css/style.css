@@ -5,6 +5,7 @@ body{
     font-weight: 100;
     font-style: italic;;
     background-color: #CAF0F8;
+    overflow-x: hidden;
 }
 
 main{
